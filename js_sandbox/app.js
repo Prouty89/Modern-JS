@@ -119,65 +119,175 @@
 
 // DATA CONVERSION
 
-let val; 
+// let val; 
 
-// Number to string 
+// // Number to string 
 
-val = String(5); 
-val = String(4 + 4);
+// val = String(5); 
+// val = String(4 + 4);
 
-// Bool to string 
+// // Bool to string 
 
-val = String(true);
+// val = String(true);
 
-// Date to string
-val = String(new Date());
+// // Date to string
+// val = String(new Date());
 
 // Array to string
-val = String([1,2,3,4,])
+// val = String([1,2,3,4,])
 
 // toString()
-val = (5).toString();
-val = (true).toString();
+// val = (5).toString();
+// val = (true).toString();
 
 // String to Number
 
-val = Number('5');
+// val = Number('5');
 
-val = Number(true);
+// val = Number(true);
 
-val = Number(false);
+// val = Number(false);
 
-val = Number(null);
+// val = Number(null);
 
-val = Number('hello');
+// val = Number('hello');
 
-val = Number([1,2,3]);
+// val = Number([1,2,3]);
 
 // ParseInt
 
-val = parseInt('100');
-val = parseFloat('100.30')
+// val = parseInt('100');
+// val = parseFloat('100.30')
 
 // Output 
 
-console.log(val);
+// console.log(val);
 
-console.log(typeof val);
+// console.log(typeof val);
 
-console.log(val.toFixed());
+// console.log(val.toFixed(2));
 
 // console.log(val.length);
 
 
 //Type Coersion
 
-const val1 = 5; 
-const val2 = 6; 
-const sum = val1 + val2;
+// const val1 = String(5); 
+// const val2 = 6; 
+// const sum = Number(val1 + val2);
+
+// console.log(sum);
+// console.log(typeof sum)
+
+// Math Operator
+
+
+// const num1 = 100;
+// const num2 = 50;
+
+// let val;
+
+//simple math with numbers 
+
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// // Math Object
+
+// val = Math.PI; 
+// val = Math.E;
+// val = Math.round(1.8);
+// val = Math.ceil(2.4);
+// val = Math.floor(2.8);
+// val = Math.sqrt(64);
+// val = Math.abs(-2);
+// val = Math.pow(7, 3);
+// val = Math.min(2, 33, 4, 6, 8, 34);
+// val = Math.max(3, 7, 19, 55, 6);
+
+// val = Math.random();
+
+// val = Math.floor(Math.random() * 20 +1);
 
 
 
+// console.log(val)
+
+
+// Strings and Concatenation
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 36;
+const str = 'Hello my name is Blake'
+const tags = 'Purple, Diamond, Skew'
+
+let val; 
+
+
+//Concatenation
+val = firstName + ' ' + lastName;
+
+//Append
+val = 'Brad ';
+val += 'Traversy';
+
+val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+//Escaping 
+
+val = "That\'s awesome, I can\'t wait";
+
+//Length 
+val = firstName.length;
+
+// Concat
+val = firstName.concat(' ', lastName);
+
+// Change case
+val = firstName.toLocaleUpperCase();
+val = firstName.toLocaleLowerCase();
+
+val = firstName[0];
+
+// indexOf()
+val = firstName.indexOf('l');
+val = firstName.lastIndexOf('l');
+
+//charAt()
+
+val = firstName.charAt('2');
+
+// Get last char
+val = firstName.charAt(firstName.length -1);
+
+// substring()
+
+val = firstName.substring(0, 4);
+
+//slice()
+
+val = firstName.slice(0,4);
+val = firstName.slice(-3);
+
+//split()
+
+val = str.split(' ');
+val = tags.split(',');
+
+//replace()
+
+val = str.replace('Brad', 'Jack');
+
+//includes()
+
+val = str.includes('Hello');
+
+
+console.log(val);
 
 
 
