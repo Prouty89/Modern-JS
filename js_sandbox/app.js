@@ -219,75 +219,187 @@
 
 // Strings and Concatenation
 
-const firstName = 'William';
-const lastName = 'Johnson';
-const age = 36;
-const str = 'Hello my name is Blake'
-const tags = 'Purple, Diamond, Skew'
+// const firstName = 'William';
+// const lastName = 'Johnson';
+// const age = 36;
+// const str = 'Hello my name is Blake'
+// const tags = 'Purple, Diamond, Skew'
 
-let val; 
+// let val; 
 
 
-//Concatenation
-val = firstName + ' ' + lastName;
+// //Concatenation
+// val = firstName + ' ' + lastName;
 
-//Append
-val = 'Brad ';
-val += 'Traversy';
+// //Append
+// val = 'Brad ';
+// val += 'Traversy';
 
-val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+// val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
-//Escaping 
+// //Escaping 
 
-val = "That\'s awesome, I can\'t wait";
+// val = "That\'s awesome, I can\'t wait";
 
-//Length 
-val = firstName.length;
+// //Length 
+// val = firstName.length;
 
-// Concat
-val = firstName.concat(' ', lastName);
+// // Concat
+// val = firstName.concat(' ', lastName);
 
-// Change case
-val = firstName.toLocaleUpperCase();
-val = firstName.toLocaleLowerCase();
+// // Change case
+// val = firstName.toLocaleUpperCase();
+// val = firstName.toLocaleLowerCase();
 
-val = firstName[0];
+// val = firstName[0];
 
-// indexOf()
-val = firstName.indexOf('l');
-val = firstName.lastIndexOf('l');
+// // indexOf()
+// val = firstName.indexOf('l');
+// val = firstName.lastIndexOf('l');
 
-//charAt()
+// //charAt()
 
-val = firstName.charAt('2');
+// val = firstName.charAt('2');
 
-// Get last char
-val = firstName.charAt(firstName.length -1);
+// // Get last char
+// val = firstName.charAt(firstName.length -1);
 
-// substring()
+// // substring()
 
-val = firstName.substring(0, 4);
+// val = firstName.substring(0, 4);
 
-//slice()
+// //slice()
 
-val = firstName.slice(0,4);
-val = firstName.slice(-3);
+// val = firstName.slice(0,4);
+// val = firstName.slice(-3);
 
-//split()
+// //split()
 
-val = str.split(' ');
-val = tags.split(',');
+// val = str.split(' ');
+// val = tags.split(',');
 
-//replace()
+// //replace()
 
-val = str.replace('Brad', 'Jack');
+// val = str.replace('Brad', 'Jack');
 
-//includes()
+// //includes()
 
-val = str.includes('Hello');
+// val = str.includes('Hello');
+
+
+// console.log(val);
+
+//Template literals
+
+// const name = 'John';
+// const age = 30; 
+// const job = 'Web Developer';
+// const city = 'Miami';
+// let html; 
+
+// // Without Template Strings (es5)
+
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li> ' + job+ ' </li> <li>City: ' + city + '</li></ul>';
+
+// html = '<ul>' + 
+//         '<li>Age: ' + age + '</li>' +
+//         '<li>Name: ' + name + '</li>' +
+//         '<li>City: ' + city + '</li>' +
+//         '<li>Job: ' + job + '</li>' +
+//         '</ul>';
+
+//         function hello() {
+//             return 'hello';
+//         }
+
+        
+//         // With template literals (es6)
+        
+//         html = `
+//         <ul>
+//         <li> Name: ${name} </li>
+//         <li> Age: ${age} </li>
+//         <li> City: ${city} </li>
+//         <li> Job: ${job} </li>
+//         <li> ${2 + 2} </li>
+//         <li> ${hello()}</li>
+//         <li> ${age > 29 ? 'Over 30' : 'Under 30'}</li>
+//         <li> ${age}</li>
+//         </ul>
+//         `
+//     document.body.innerHTML = html;
+
+
+// Arrays
+
+// Create some arrays 
+
+const numbers = [1, 3 , 45, 88, 4, 90];
+
+const numbers2 = new Array(2,3,4,5,6,66,11,90);
+
+const fruit = ['Apple', 'Banana', 'Orange', 'Pear']
+
+const mixed = [22 , 'Hello', true, undefined, {a:1, b: 1}, new Date()];
+
+let val;
+
+// Array Length
+val = numbers.length;
+//Check if is array
+val = Array.isArray(numbers);
+//Get single value
+val = numbers[3];
+val = numbers[0]; 
+//Insert into array
+numbers[2] = 100;
+// Find index of value 
+val = numbers.indexOf(88);
+
+//Array Mutation
+// Add to end
+// numbers.push(250);
+// // Add to front
+// numbers.unshift(120);
+// // Take off from end
+// numbers.pop();
+// // Take off from front
+// numbers.shift();
+// // Splice values
+// numbers.splice(1,2);
+// // Reverse
+// numbers.reverse();
+//Concatenate array
+val = numbers.concat(numbers2);
+//sortying array
+val = fruit.sort();
+val = numbers.sort();
+
+// Use the compare function 
+val = numbers.sort(function(x,y){
+    return x-y;
+});
+
+//reverse sort
+
+val = numbers.sort(function(x,y){
+    return y -x; 
+});
+
+//find
+
+function under50(num){
+    return num <50;
+}
+
+val = numbers.find(under50);
 
 
 console.log(val);
+console.log(numbers);
+
+
+
 
 
 
