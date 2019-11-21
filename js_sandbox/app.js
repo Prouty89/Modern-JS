@@ -334,27 +334,27 @@
 
 // Create some arrays 
 
-const numbers = [1, 3 , 45, 88, 4, 90];
+// const numbers = [1, 3 , 45, 88, 4, 90];
 
-const numbers2 = new Array(2,3,4,5,6,66,11,90);
+// const numbers2 = new Array(2,3,4,5,6,66,11,90);
 
-const fruit = ['Apple', 'Banana', 'Orange', 'Pear']
+// const fruit = ['Apple', 'Banana', 'Orange', 'Pear']
 
-const mixed = [22 , 'Hello', true, undefined, {a:1, b: 1}, new Date()];
+// const mixed = [22 , 'Hello', true, undefined, {a:1, b: 1}, new Date()];
 
-let val;
+// let val;
 
-// Array Length
-val = numbers.length;
-//Check if is array
-val = Array.isArray(numbers);
-//Get single value
-val = numbers[3];
-val = numbers[0]; 
-//Insert into array
-numbers[2] = 100;
-// Find index of value 
-val = numbers.indexOf(88);
+// // Array Length
+// val = numbers.length;
+// //Check if is array
+// val = Array.isArray(numbers);
+// //Get single value
+// val = numbers[3];
+// val = numbers[0]; 
+// //Insert into array
+// numbers[2] = 100;
+// // Find index of value 
+// val = numbers.indexOf(88);
 
 //Array Mutation
 // Add to end
@@ -370,35 +370,78 @@ val = numbers.indexOf(88);
 // // Reverse
 // numbers.reverse();
 //Concatenate array
-val = numbers.concat(numbers2);
-//sortying array
-val = fruit.sort();
-val = numbers.sort();
+// val = numbers.concat(numbers2);
+// //sortying array
+// val = fruit.sort();
+// val = numbers.sort();
 
-// Use the compare function 
-val = numbers.sort(function(x,y){
-    return x-y;
-});
+// // Use the compare function 
+// val = numbers.sort(function(x,y){
+//     return x-y;
+// });
 
-//reverse sort
+// //reverse sort
 
-val = numbers.sort(function(x,y){
-    return y -x; 
-});
+// val = numbers.sort(function(x,y){
+//     return y -x; 
+// });
 
-//find
+// //find
 
-function under50(num){
-    return num <50;
+// function under50(num){
+//     return num <50;
+// }
+
+// val = numbers.find(under50);
+
+
+// console.log(val);
+// console.log(numbers);
+
+// Object literals
+
+const person = {
+    firstName: 'Steve',
+    lastName: 'Smith',
+    age: 30,
+    email: 'steve@aol.com',
+    hobbies: ['music', 'sports'],
+    married: false,
+    address: {
+        city: 'Miami',
+        state: 'Florida'
+    },
+    getBirthYear: function(){
+        return 2017 - this.age;
+    }
 }
 
-val = numbers.find(under50);
+let val;
 
+val = person; 
+// Get specific value
+
+val = person.firstName;
+val = person['lastName'];
+val = person.age;
+val = person.hobbies[1];
+val = person.address.state;
+val = person.address['city'];
+val = person.getBirthYear();
 
 console.log(val);
-console.log(numbers);
 
 
+const people = [
+    {name: 'John', age: 30},
+    {name: 'Mike', age: 40},
+    {name: 'Bill', age: 27},
+];
+
+//LOOP
+for(let i = 0; i < people.length; i++){
+    console.log(people[i].name)
+}
 
 
 
