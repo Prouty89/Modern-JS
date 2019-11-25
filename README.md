@@ -99,3 +99,12 @@ As a dynamically typed language
 -  Most other languages are statically typed (Java, C#, C++)
 -  THere are supersets of JS and addons that allow static typing (TypeScript, Flow)
 
+**Document Object Model**
+
+ - Tree of nodes/ elements created by the browswer
+
+ - JS can be used to read/write/manipulate to the DOM
+ 
+ - Object Oriented Representation
+
+ ![](DOM.gif)
