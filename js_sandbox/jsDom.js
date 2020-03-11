@@ -368,16 +368,16 @@
 
 //Keyboard & Input Events
 
-const form = document.querySelector('form');
+// const form = document.querySelector('form');
 
-const taskInput = document.getElementById('task');
+// const taskInput = document.getElementById('task');
 
-const heading = document.querySelector('h5');
+// const heading = document.querySelector('h5');
 
-const select = document.querySelector('select');
+// const select = document.querySelector('select');
 
-// Clear input
-taskInput.value = '';
+// // Clear input
+// taskInput.value = '';
 
 // form.addEventListener('submit', runEvent);
 

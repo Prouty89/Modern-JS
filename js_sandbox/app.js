@@ -468,4 +468,37 @@
 // console.log(birthday);
 
 
+// Section 4 DOM Projects
+
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+
+// // Simple Math With Numbers
+
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// //Math obj
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.8);
+// val = Math.ceil(2.4);
+// val = Math.floor(2.8);
+// val = Math.sqrt(38);
+// val = Math.abs(-44);
+// val = Math.pow(8, 2);
+// val = Math.min(2, 3, 4, 55, 88, 99, -2);
+// val = Math.max(33, 88, 99);
+// val = Math.random();
+
+// val = Math.floor(Math.random() *20 + 1);
+
+// console.log(val);
+
+//Strings
+
 
