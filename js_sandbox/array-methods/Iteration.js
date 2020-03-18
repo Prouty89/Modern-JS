@@ -54,3 +54,22 @@ const foundIndex = objects2.findIndex(function(item){
 })
 console.log(foundIndex);
 
+
+// filter
+
+
+const items = [
+    { name: 'Bike', price: 100 },
+    { name: 'Bike', price: 10 },
+    { name: 'Bike', price: 15 },
+    { name: 'Bike', price: 50 },
+    { name: 'Bike', price: 25 },
+]
+
+const filteredItems = items.filter((item) => {
+    return item.price <= 20
+});
+
+console.log(filteredItems);
+
+
